@@ -1,0 +1,20 @@
+{
+  "name": "tsc-cross-build",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json"
+  },
+  "main": "./build/cjs/index.js",
+  "module": "./build/esm/index.js",
+  "files": [
+    "build/"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
